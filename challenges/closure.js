@@ -18,7 +18,17 @@ myFunction();
 
 // Explanation: 
 
+// The variable is local. It is because it is in the lexical scope of the nested function.
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function sumation(num) {
+  let counter = 0;
+      for(num; num > 1; num--) {
+          counter = counter + num;
+      }
+      return ++counter;
+}
+console.log(sumation(4));
